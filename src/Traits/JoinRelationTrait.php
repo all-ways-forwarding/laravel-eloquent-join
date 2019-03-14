@@ -16,7 +16,7 @@ trait JoinRelationTrait
      */
     public function __call($method, $parameters)
     {
-        if($this->getQuery() instanceof EloquentJoinBuilder {
+        if($this->getQuery() instanceof EloquentJoinBuilder) {
             $this->getQuery()->relationClauses[] = [$method => $parameters];
         }
 
